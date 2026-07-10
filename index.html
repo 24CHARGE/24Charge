@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>24CHARGE | Power Bank Rental</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =======================
+            NAVBAR
+    ======================== -->
+
+    <nav>
+
+        <div class="logo">
+            <a href="#hero">
+                <img src="image/logo.png" alt="24CHARGE Logo">
+            </a>
+        </div>
+
+        <button class="menu-toggle" aria-label="เปิดเมนู">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="nav-menu">
+
+            <li>
+                <a href="#hero">หน้าแรก</a>
+            </li>
+
+            <li>
+                <a href="#service">บริการ</a>
+            </li>
+
+            <li>
+                <a href="#pricing">อัตราค่าเช่า</a>
+            </li>
+
+            <li class="dropdown">
+
+                <a href="#" class="dropdown-btn">
+                    เกี่ยวกับเรา
+                    <span class="arrow">▾</span>
+                </a>
+
+                <ul class="dropdown-menu">
+
+                    <li>
+                        <a href="#partners">Our Partners</a>
+                    </li>
+
+                    <li>
+                        <a href="#certificate">ใบรับรองมาตรฐาน</a>
+                    </li>
+
+                    <li>
+                        <a href="#faq">FAQ</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact">ติดต่อเรา</a>
+                    </li>
+
+                </ul>
+
+            </li>
+
+            <li>
+                <a href="#contact">ติดต่อ</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <!-- =======================
+            HERO
+    ======================== -->
+
+    <section class="hero" id="hero">
+
+        <div class="hero-content">
+
+            <p class="eyebrow">เปิดบริการ 24 ชั่วโมง</p>
+
+            <h1>
+                บริการตู้เช่า
+                <br>
+                Power Bank
+            </h1>
+
+            <p class="hero-lead">
+                พลังงานไม่ควรมีขีดจำกัด...
+                <br>
+                และคุณก็เช่นกัน
+            </p>
+
+            <a href="#service" class="btn">
+                เริ่มต้นใช้งาน
+            </a>
+
+            <div class="battery-visual" aria-hidden="true">
+                <div class="battery-shell">
+                    <div class="battery-fill"></div>
+                    <div class="battery-ticks">
+                        <span></span><span></span><span></span><span></span>
+                    </div>
+                </div>
+                <span class="battery-cap"></span>
+                <p class="battery-label"><span class="num">100</span>% พร้อมใช้งาน</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =======================
+            HOW IT WORKS
+    ======================= -->
+
+    <section class="how-it-works" id="service">
+
+        <h2>วิธีการเช่า</h2>
+
+        <div class="steps">
+
+            <div class="step">
+                <span class="step-pips"><i class="filled"></i><i></i><i></i></span>
+                <h3>Scan QR Code</h3>
+                <p>
+                    สแกน QR Code หน้าตู้
+                    เพื่อเริ่มต้นการเช่าได้ทันที
+                </p>
+            </div>
+
+            <div class="step">
+                <span class="step-pips"><i class="filled"></i><i class="filled"></i><i></i></span>
+                <h3>Pick Up Power Bank</h3>
+                <p>
+                    รับ Power Bank
+                    จากช่อง
+                </p>
+            </div>
+
+            <div class="step">
+                <span class="step-pips"><i class="filled"></i><i class="filled"></i><i class="filled"></i></span>
+                <h3>Return Anywhere</h3>
+                <p>
+                    คืนที่ตู้ 24CHARGE
+                    ได้ทุกสาขาทั่วประเทศ
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =======================
+            PRICING
+    ======================= -->
+
+    <section class="pricing" id="pricing">
+
+        <h2>อัตราค่าเช่า</h2>
+        <p class="section-lead">จ่ายเท่าที่ใช้ ไม่มีค่าใช้จ่ายแอบแฝง</p>
+
+        <div class="price-grid">
+
+            <div class="price-card">
+                <p class="price-label">ต่อชั่วโมง</p>
+                <p class="price-value"><span class="num">20</span><small>บาท</small></p>
+            </div>
+
+            <div class="price-card price-card--brand">
+                <p class="price-label">ต่อวัน (สูงสุด)</p>
+                <p class="price-value"><span class="num">80</span><small>บาท</small></p>
+            </div>
+
+            <div class="price-card">
+                <p class="price-label">ค่ามัดจำ</p>
+                <p class="price-value"><span class="num">480</span><small>บาท</small></p>
+                <p class="price-note">คืนเมื่อส่งคืนสำเร็จ</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =======================
+          CERTIFICATES
+    ======================= -->
+
+    <section class="certificates" id="certificate">
+
+        <h2>ใบรับรองมาตรฐาน</h2>
+
+        <div class="certificate-list">
+            <a href="#">มอก. (มาตรฐานผลิตภัณฑ์อุตสาหกรรม)</a>
+            <a href="#">CCC (China Compulsory Certification)</a>
+            <a href="#">RoHS</a>
+        </div>
+
+    </section>
+
+    <!-- =======================
+          OUR PARTNERS
+    ======================= -->
+
+    <section class="partners" id="partners">
+
+        <h2>Our Partners</h2>
+
+        <p class="partners-subtitle">
+            พันธมิตรที่ร่วมให้บริการกับ 24CHARGE
+        </p>
+
+        <div class="partners-grid">
+            <div class="partner-card"><img src="image/partner1.png" alt="Partner 1"></div>
+            <div class="partner-card"><img src="image/partner2.png" alt="Partner 2"></div>
+            <div class="partner-card"><img src="image/partner3.png" alt="Partner 3"></div>
+            <div class="partner-card"><img src="image/partner4.png" alt="Partner 4"></div>
+            <div class="partner-card"><img src="image/partner5.png" alt="Partner 5"></div>
+            <div class="partner-card"><img src="image/partner6.png" alt="Partner 6"></div>
+        </div>
+
+    </section>
+
+    <!-- =======================
+            FAQ
+    ======================= -->
+
+    <section class="faq" id="faq">
+
+        <h2>คำถามที่พบบ่อย</h2>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                หาตู้ 24Charge ได้จากไหน?
+                <span>+</span>
+            </button>
+            <div class="faq-answer">
+                <p>
+                    สามารถดูตำแหน่งตู้ใกล้เคียงทั้งหมด <br>
+                    ซึ่งแสดงจำนวนพาวเวอร์แบงค์ที่พร้อมให้เช่า <br>
+                    และช่องว่างสำหรับคืน ได้จากแผนที่ภายในแอป 24Charge
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                เช่าพาวเวอร์แบงค์อย่างไร?
+                <span>+</span>
+            </button>
+            <div class="faq-answer">
+                <p>
+                    เปิดแอป 24Charge หรือหน้าเว็บไซต์ <br>
+                    แล้วสแกน QR Code บนตู้เพื่อเริ่มเช่า
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                คืนพาวเวอร์แบงค์อย่างไร?
+                <span>+</span>
+            </button>
+            <div class="faq-answer">
+                <p>
+                    นำไปคืนที่ตู้ 24Charge ใดก็ได้ ใส่พาวเวอร์แบงค์ลงช่องว่าง <br>
+                    ระบบจะแสดงผลการคืน พร้อมสรุปรายละเอียดการเช่า <br>
+                    ในการคืนพาวเวอร์แบงค์ ผู้ใช้ต้องใส่พาวเวอร์แบงค์ <br>
+                    โดยหันด้านที่มีสายชาร์จเข้าไปในช่องว่างของตู้
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                คิดค่าบริการอย่างไร?
+                <span>+</span>
+            </button>
+            <div class="faq-answer">
+                <p>
+                    ค่าบริการชั่วโมงละ 20 บาท แต่ไม่เกิน 80 บาทต่อวัน <br>
+                    เศษของชั่วโมงจะถูกคิดเป็นชั่วโมงเต็ม <br>
+                    ถ้าเช่ามากกว่า 6 วัน ระบบจะถือว่า "ไม่คืน" <br>
+                    และจะถูกคิดเงิน 480 บาท ซึ่งเป็นเงินมัดจำ
+                    <br><br>
+                    อย่างไรก็ดี ในช่วงกิจกรรมพิเศษ เช่น คอนเสิร์ต เทศกาลดนตรี <br>
+                    นิทรรศการ งานแฟร์ และการแสดงพิเศษอื่นๆ อัตราค่าบริการและ/<br>
+                    หรือจำนวนเงินมัดจำอาจมีการปรับเปลี่ยน ทั้งนี้ รายละเอียด<br>
+                    การปรับเปลี่ยนดังกล่าวจะแสดงและแจ้งให้ทราบอย่างชัดเจน ณ สถานี<br>
+                    ให้บริการในขณะทำการเช่า
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                ทำไมต้องมีเงินมัดจำ?
+                <span>+</span>
+            </button>
+            <div class="faq-answer">
+                <p>
+                    เป็นเงินค้ำประกันของพาวเวอร์แบงค์ กรณีไม่คืนหรือทำหาย <br>
+                    ถ้าคืนภายใน 6 วัน เงินมัดจำจะไม่ถูกหักเต็มจำนวน <br>
+                    และลูกค้าไม่จำเป็นต้องนำพาวเวอร์แบงค์มาคืน
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                ถ้าจ่ายด้วยบัตร เงินมัดจำทำงานอย่างไร?
+                <span>+</span>
+            </button>
+            <div class="faq-answer">
+                <p>
+                    เมื่อเริ่มเช่า บัตรของคุณจะถูกกันวงเงิน 480 บาท ถ้าคืนในเวลา <br>
+                    วงเงินจะถูกปล่อยคืน ถ้าเกิน 6 วัน <br>
+                    วงเงินที่กันไว้จะกลายเป็นการตัดเงินจริง
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                มีสายชาร์จมากับพาวเวอร์แบงค์ไหม?
+                <span>+</span>
+            </button>
+            <div class="faq-answer">
+                <p>
+                    มีสายชาร์จให้ในตัวพาวเวอร์แบงค์ เป็นสาย Micro USB, <br>
+                    Lightning และ USB-C ชาร์จได้ทีละ 1 อุปกรณ์เท่านั้น
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                ความจุแบตเตอรี่เท่าไร?
+                <span>+</span>
+            </button>
+            <div class="faq-answer">
+                <p>
+                    <span class="num">8,000</span> mAh หากใช้จนหมด สามารถชาร์จแบตเตอรี่เองได้
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                หากเช่าเกิน 1 วัน คิดค่าบริการอย่างไร?
+                <span>+</span>
+            </button>
+            <div class="faq-answer">
+                <p>
+                    หากเช่าเกิน 1 วัน ค่าบริการถัดไปจะคิดเป็นรายวัน วันละ 80 บาท <br>
+                    เช่าได้สูงสุด 6 วัน หากเกิน 6 วัน เงินมัดจำจะถูกหักเป็นจำนวนเงิน <br>
+                    480 บาท
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- =======================
+            CONTACT
+    ======================= -->
+
+    <section class="contact" id="contact">
+
+        <h2>ติดต่อเรา</h2>
+
+        <p class="contact-subtitle">
+            สนใจติดตั้งตู้เช่าพาวเวอร์แบงค์ หรือสอบถามข้อมูลเพิ่มเติม
+            ติดต่อทีมงานของเราได้
+        </p>
+
+        <div class="contact-grid">
+
+            <div class="contact-item">
+                <h3>โทรศัพท์</h3>
+                <p>Coming Soon</p>
+            </div>
+
+            <div class="contact-item">
+                <h3>Email</h3>
+                <p>Coming Soon</p>
+            </div>
+
+            <div class="contact-item">
+                <h3>LINE Official</h3>
+                <p>@24charge</p>
+            </div>
+
+            <div class="contact-item">
+                <h3>ที่อยู่</h3>
+                <p>
+                    บริษัท ทเวนตี้โฟร์ ชาร์จ จำกัด<br>
+                    เลขที่ 284 อาคาร A4 ชั้น 2<br>
+                    ซอยศูนย์วิจัย 4 แขวงบางกะปิ<br>
+                    เขตห้วยขวาง กรุงเทพมหานคร 10310
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =======================
+            FOOTER
+    ======================= -->
+
+    <footer>
+
+        <img src="image/logo.png" alt="24CHARGE Logo">
+
+        <p>บริการตู้เช่าพาวเวอร์แบงค์ 24 ชั่วโมง</p>
+
+        <div class="footer-menu">
+            <a href="#hero">หน้าแรก</a>
+            <a href="#service">บริการ</a>
+            <a href="#pricing">อัตราค่าเช่า</a>
+            <a href="#partners">Our Partners</a>
+            <a href="#contact">ติดต่อ</a>
+        </div>
+
+        <div class="social">
+            <a href="#">Website</a>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">TikTok</a>
+            <a href="#">LINE</a>
+        </div>
+
+        <hr>
+
+        <p>© 2026 24CHARGE. All Rights Reserved.</p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
