@@ -1044,8 +1044,8 @@ section h2{
     text-align:center;
     color:var(--text-muted);
     max-width:600px;
-    margin:12px auto 50px;
-    font-weight:300;
+    margin:var(--space-xs) auto var(--space-lg);
+    font-weight:400;
 }
 
 .contact-grid{
