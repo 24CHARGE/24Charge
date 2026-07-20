@@ -1,715 +1,665 @@
 <!DOCTYPE html>
+
 <html lang="th">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>24CHARGE | Power Bank Rental</title>
-
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>24CHARGE | Power Bank Rental</title>
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700;800&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<!-- CSS -->
+<link href="style.css" rel="stylesheet"/>
 </head>
-
-<body>
-
-    <!-- =======================
+<body><div aria-hidden="true" class="scroll-progress"><span></span></div>
+<!-- =======================
             NAVBAR
     ======================== -->
-
-    <nav>
-
-        <div class="logo">
-            <a href="#hero">
-                <img src="image/logo.png" alt="24CHARGE Logo">
-            </a>
-        </div>
-
-        <button class="menu-toggle" aria-label="เปิดเมนู">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-
-        <ul class="nav-menu">
-
-            <li>
-                <a href="#hero" data-th="หน้าแรก" data-en="Home">หน้าแรก</a>
-            </li>
-
-            <li>
-                <a href="#service" data-th="บริการ" data-en="Service">บริการ</a>
-            </li>
-
-            <li>
-                <a href="#pricing" data-th="อัตราค่าเช่า" data-en="Pricing">อัตราค่าเช่า</a>
-            </li>
-
-            <!-- สำหรับผู้ใช้งาน -->
-            <li class="dropdown">
-
-                <a href="#" class="dropdown-btn">
-                    <span data-th="สำหรับผู้ใช้งาน" data-en="For Users">สำหรับผู้ใช้งาน</span>
-                    <span class="arrow">▾</span>
-                </a>
-
-                <ul class="dropdown-menu">
-
-                    <li>
-                        <a href="#download" data-th="ดาวน์โหลดแอป" data-en="Download the app">ดาวน์โหลดแอป</a>
-                    </li>
-
-                    <li>
-                        <a href="#hero" data-th="เช่าผ่านเว็บไซต์" data-en="Rent via website">เช่าผ่านเว็บไซต์</a>
-                    </li>
-
-                    <li>
-                        <a href="#service" data-th="วิธีการใช้งาน" data-en="How to use">วิธีการใช้งาน</a>
-                    </li>
-
-                    <li>
-                        <a href="#payment" data-th="การชำระเงิน" data-en="Payment">การชำระเงิน</a>
-                    </li>
-
-                </ul>
-
-            </li>
-
-            <!-- สำหรับพาร์ทเนอร์ -->
-            <li class="dropdown">
-
-                <a href="#" class="dropdown-btn">
-                    <span data-th="สำหรับพาร์ทเนอร์" data-en="For Partners">สำหรับพาร์ทเนอร์</span>
-                    <span class="arrow">▾</span>
-                </a>
-
-                <ul class="dropdown-menu">
-
-                    <li>
-                        <a href="#contact" data-th="สนใจเป็นพาร์ทเนอร์กับเรา" data-en="Become a partner">สนใจเป็นพาร์ทเนอร์กับเรา</a>
-                    </li>
-
-                    <li>
-                        <a href="#" target="_blank" rel="noopener" data-th="ระบบหลังบ้าน / แจ้งปัญหา" data-en="Partner portal / Report issue">ระบบหลังบ้าน / แจ้งปัญหา</a>
-                    </li>
-
-                </ul>
-
-            </li>
-
-            <!-- เกี่ยวกับเรา -->
-            <li class="dropdown">
-
-                <a href="#" class="dropdown-btn">
-                    <span data-th="เกี่ยวกับเรา" data-en="About Us">เกี่ยวกับเรา</span>
-                    <span class="arrow">▾</span>
-                </a>
-
-                <ul class="dropdown-menu">
-
-                    <li>
-                        <a href="About Vision.html" target="_blank" rel="noopener" data-th="วิสัยทัศน์" data-en="Vision">วิสัยทัศน์</a>
-                    </li>
-
-                    <li>
-                        <a href="About Product.html" target="_blank" rel="noopener" data-th="ข้อมูลผลิตภัณฑ์" data-en="Product Info">ข้อมูลผลิตภัณฑ์</a>
-                    </li>
-
-                    <li>
-                        <a href="#partners" data-th="Our Partners" data-en="Our Partners">Our Partners</a>
-                    </li>
-
-                    <li>
-                        <a href="#certificate" data-th="ใบรับรองมาตรฐาน" data-en="Certificates">ใบรับรองมาตรฐาน</a>
-                    </li>
-
-                    <li>
-                        <a href="#faq" data-th="FAQ" data-en="FAQ">FAQ</a>
-                    </li>
-
-                    <li>
-                        <a href="#contact" data-th="ติดต่อเรา" data-en="Contact Us">ติดต่อเรา</a>
-                    </li>
-
-                </ul>
-
-            </li>
-
-            <li class="lang-switch">
-                <button class="lang-btn" data-lang="th">TH</button>
-                <span class="lang-divider">/</span>
-                <button class="lang-btn" data-lang="en">EN</button>
-            </li>
-
-        </ul>
-
-    </nav>
-
-    <!-- =======================
+<nav aria-label="เมนูหลัก" class="navbar">
+<div class="navbar-inner">
+<a aria-label="24CHARGE หน้าแรก" class="logo" href="#hero">
+<img alt="24CHARGE Logo" src="image/logo.png"/>
+</a>
+<button aria-controls="main-navigation" aria-expanded="false" aria-label="เปิดเมนู" class="menu-toggle ripple-target" type="button">
+<span></span>
+<span></span>
+<span></span>
+</button>
+<ul class="nav-menu" id="main-navigation">
+<li>
+<a data-en="Home" data-th="หน้าหลัก" href="#hero">หน้าหลัก</a>
+</li>
+<li class="dropdown">
+<button aria-expanded="false" class="dropdown-btn ripple-target" type="button">
+<span data-en="About us" data-th="เกี่ยวกับเรา">เกี่ยวกับเรา</span>
+<span aria-hidden="true" class="arrow">▾</span>
+</button>
+<ul class="dropdown-menu"><li><a data-en="About 24CHARGE" data-th="เกี่ยวกับ 24CHARGE" href="about.html">เกี่ยวกับ 24CHARGE</a></li><li><a data-en="Product information" data-th="ข้อมูลผลิตภัณฑ์" href="products.html">ข้อมูลผลิตภัณฑ์</a></li><li><a data-en="Partners" data-th="พันธมิตร" href="#partners">พันธมิตร</a></li><li><a data-en="Certifications" data-th="ใบรับรองมาตรฐาน" href="#certificate">ใบรับรองมาตรฐาน</a></li><li><a data-en="FAQ" data-th="คำถามที่พบบ่อย" href="#faq">คำถามที่พบบ่อย</a></li><li><a data-en="Contact us" data-th="ติดต่อเรา" href="#contact">ติดต่อเรา</a></li></ul>
+</li>
+<li class="dropdown">
+<button aria-expanded="false" class="dropdown-btn ripple-target" type="button">
+<span data-en="For users" data-th="สำหรับผู้ใช้งาน">สำหรับผู้ใช้งาน</span>
+<span aria-hidden="true" class="arrow">▾</span>
+</button>
+<ul class="dropdown-menu">
+<li><a data-en="Download the app" data-th="ดาวน์โหลดแอป" href="#download">ดาวน์โหลดแอป</a></li>
+<li><a data-en="Rent via website" data-th="เช่าผ่านเว็บไซต์" href="https://app.24charge.com/" rel="noopener" target="_blank">เช่าผ่านเว็บไซต์</a></li>
+<li><a data-en="How to use" data-th="วิธีการใช้งาน" href="#service">วิธีการใช้งาน</a></li>
+<li><a data-en="Pricing" data-th="อัตราค่าเช่า" href="#pricing">อัตราค่าเช่า</a></li>
+<li><a data-en="Payment" data-th="การชำระเงิน" href="#payment">การชำระเงิน</a></li>
+</ul>
+</li>
+<li class="dropdown">
+<button aria-expanded="false" class="dropdown-btn ripple-target" type="button">
+<span data-en="For partners" data-th="สำหรับพาร์ทเนอร์">สำหรับพาร์ทเนอร์</span>
+<span aria-hidden="true" class="arrow">▾</span>
+</button>
+<ul class="dropdown-menu">
+<li><a data-en="Become a partner" data-th="สนใจเป็นพาร์ทเนอร์กับเรา" href="#contact">สนใจเป็นพาร์ทเนอร์กับเรา</a></li>
+<li><a data-en="Partner portal / Report issue" data-open-issue="" data-th="ระบบหลังบ้าน / แจ้งปัญหา" href="#report-issue">ระบบหลังบ้าน / แจ้งปัญหา</a></li>
+</ul>
+</li>
+<li>
+<a data-en="Contact" data-th="ติดต่อ" href="#contact">ติดต่อ</a>
+</li>
+<li class="nav-action">
+<a class="nav-start-btn ripple-target" data-en="Get started" data-th="เริ่มต้นใช้งาน" href="https://app.24charge.com/" rel="noopener" target="_blank">เริ่มต้นใช้งาน</a>
+</li>
+<li class="lang-switch">
+<button aria-label="Switch to English" class="lang-btn lang-toggle ripple-target" data-lang="en" type="button">EN</button>
+</li>
+</ul>
+</div>
+</nav>
+<!-- =======================
             HERO
     ======================== -->
-
-    <section class="hero" id="hero">
-
-        <div class="hero-inner">
-
-            <div class="hero-content">
-
-                <p class="eyebrow" data-th="เปิดบริการ 24 ชั่วโมง" data-en="Open 24 Hours">เปิดบริการ 24 ชั่วโมง</p>
-
-                <h1>
-                    <span data-th="บริการตู้เช่า" data-en="Power Bank">บริการตู้เช่า</span>
-                    <br>
-                    <span data-th="Power Bank" data-en="Rental Station">Power Bank</span>
-                </h1>
-
-                <p class="hero-lead" data-th="พลังงานไม่ควรมีขีดจำกัด<br>และคุณก็เช่นกัน" data-en="Power shouldn't have limits.<br>Neither should you." data-html="true">
-                    พลังงานไม่ควรมีขีดจำกัด
-                    <br>
+<section class="hero" id="hero">
+<div class="hero-inner">
+<div class="hero-content">
+<p class="eyebrow" data-en="Open 24 Hours" data-th="เปิดบริการ 24 ชั่วโมง">เปิดบริการ 24 ชั่วโมง</p>
+<h1>
+<span data-en="Power Bank" data-th="บริการตู้เช่า">บริการตู้เช่า</span>
+<br/>
+<span data-en="Rental Station" data-th="Power Bank">Power Bank</span>
+</h1>
+<p class="hero-lead" data-en="Power shouldn't have limits.&lt;br&gt;Neither should you." data-html="true" data-th="พลังงานไม่ควรมีขีดจำกัด&lt;br&gt;และคุณก็เช่นกัน">
+                    พลังงานไม่ควรมีขีดจำกัด...
+                    <br/>
                     และคุณก็เช่นกัน
                 </p>
-
-                <div class="download-actions" id="download">
-
-                    <a href="#" class="store-btn" target="_blank" rel="noopener" aria-label="ดาวน์โหลดแอปบน App Store">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                            <rect x="4" y="2" width="16" height="20" rx="3" stroke="currentColor" stroke-width="1.6"/>
-                            <line x1="9" y1="19" x2="15" y2="19" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-                        </svg>
-                        <span><span data-th="ดาวน์โหลดบน" data-en="Download on">ดาวน์โหลดบน</span><strong>App Store</strong></span>
-                    </a>
-
-                    <a href="#" class="store-btn" target="_blank" rel="noopener" aria-label="ดาวน์โหลดแอปบน Google Play">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                            <path d="M6 3.5L18 12L6 20.5V3.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
-                        </svg>
-                        <span><span data-th="ดาวน์โหลดบน" data-en="Download on">ดาวน์โหลดบน</span><strong>Google Play</strong></span>
-                    </a>
-
-                    <a href="#service" class="btn btn-web" data-th="เช่าผ่านเว็บไซต์" data-en="Rent via website">เช่าผ่านเว็บไซต์</a>
-
-                </div>
-
-                <div class="battery-visual" aria-hidden="true">
-                    <div class="battery-shell">
-                        <div class="battery-fill"></div>
-                        <div class="battery-glow"></div>
-                        <div class="battery-ticks">
-                            <span></span><span></span><span></span><span></span>
-                        </div>
-                    </div>
-                    <span class="battery-cap"></span>
-                    <p class="battery-label"><span class="num">100</span><span data-th="% พร้อมใช้งาน" data-en="% ready to go">% พร้อมใช้งาน</span></p>
-                </div>
-
-            </div>
-
-            <div class="hero-media">
-                <div class="media-frame">
-                    <div class="media-placeholder">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="3" y="5" width="18" height="14" rx="1.5" stroke="currentColor" stroke-width="1.4"/>
-                            <path d="M3 15l4.5-4.5a1.5 1.5 0 0 1 2.12 0L15 15" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
-                            <circle cx="8.5" cy="9.5" r="1.4" stroke="currentColor" stroke-width="1.4"/>
-                        </svg>
-                        <p data-th="พื้นที่สำหรับรูปภาพ / วิดีโอ / สไลด์โชว์" data-en="Space for image / video / slideshow">พื้นที่สำหรับรูปภาพ / วิดีโอ / สไลด์โชว์</p>
-                        <span class="media-tag" data-th="เร็ว ๆ นี้" data-en="Coming soon">เร็ว ๆ นี้</span>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- =======================
+<div class="download-actions" id="download">
+<a aria-label="ดาวน์โหลดแอปบน App Store" class="store-btn reveal ripple-target" href="https://apps.apple.com/th/app/24charge/id6758448369?l=th" rel="noopener" target="_blank">
+<svg aria-hidden="true" fill="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<rect height="20" rx="3" stroke="currentColor" stroke-width="1.6" width="16" x="4" y="2"></rect>
+<line stroke="currentColor" stroke-linecap="round" stroke-width="1.6" x1="9" x2="15" y1="19" y2="19"></line>
+</svg>
+<span><span data-en="Download on" data-th="ดาวน์โหลดบน">ดาวน์โหลดบน</span><strong>App Store</strong></span>
+</a>
+<a aria-label="ดาวน์โหลดแอปบน Google Play" class="store-btn reveal ripple-target" href="https://play.google.com/store/apps/details?id=co.synoralab.twentyfourcharge&amp;hl=th" rel="noopener" target="_blank">
+<svg aria-hidden="true" fill="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 3.5L18 12L6 20.5V3.5Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.6"></path>
+</svg>
+<span><span data-en="Download on" data-th="ดาวน์โหลดบน">ดาวน์โหลดบน</span><strong>Google Play</strong></span>
+</a>
+<a class="btn btn-web ripple-target" data-en="Rent via website" data-th="เช่าผ่านเว็บไซต์" href="https://app.24charge.com/">เช่าผ่านเว็บไซต์</a>
+</div>
+<div aria-hidden="true" class="battery-visual">
+<div class="battery-shell">
+<div class="battery-fill"></div>
+<div class="battery-glow"></div>
+<div class="battery-ticks">
+<span></span><span></span><span></span><span></span>
+</div>
+</div>
+<span class="battery-cap"></span>
+<p class="battery-label"><span class="num">100</span><span data-en="% ready to go" data-th="% พร้อมใช้งาน">% พร้อมใช้งาน</span></p>
+</div>
+</div>
+<div class="hero-media">
+<div aria-label="ตัวอย่างภาพบรรยากาศ 24CHARGE" class="hero-slider reveal" data-slider="">
+<div class="hero-slides">
+<figure class="hero-slide is-active" data-slide="">
+<div class="photo-placeholder photo-placeholder--station">
+<div class="placeholder-orb placeholder-orb--one"></div>
+<div class="placeholder-orb placeholder-orb--two"></div>
+<div aria-hidden="true" class="placeholder-device">
+<span></span><span></span><span></span><span></span>
+</div>
+<span class="placeholder-kicker" data-en="Placeholder" data-th="ภาพตัวอย่าง">ภาพตัวอย่าง</span>
+<p data-en="Rental station in a real location" data-th="รูปตู้เช่าในสถานที่จริง">รูปตู้เช่าในสถานที่จริง</p>
+<small data-en="Replace later with image/hero-station.jpg" data-th="เปลี่ยนเป็นไฟล์ image/hero-station.jpg ภายหลัง">เปลี่ยนเป็นไฟล์ image/hero-station.jpg ภายหลัง</small>
+</div>
+<figcaption data-en="Ready wherever you go" data-th="พร้อมให้บริการทุกที่ที่คุณไป">พร้อมให้บริการทุกที่ที่คุณไป</figcaption>
+</figure>
+<figure class="hero-slide" data-slide="">
+<div class="photo-placeholder photo-placeholder--lifestyle">
+<div aria-hidden="true" class="placeholder-wave"></div>
+<div aria-hidden="true" class="placeholder-phone">
+<div class="phone-screen"><span>24</span></div>
+</div>
+<span class="placeholder-kicker" data-en="Placeholder" data-th="ภาพตัวอย่าง">ภาพตัวอย่าง</span>
+<p data-en="Lifestyle usage photo" data-th="ภาพไลฟ์สไตล์การใช้งาน">ภาพไลฟ์สไตล์การใช้งาน</p>
+<small data-en="Replace later with image/hero-lifestyle.jpg" data-th="เปลี่ยนเป็นไฟล์ image/hero-lifestyle.jpg ภายหลัง">เปลี่ยนเป็นไฟล์ image/hero-lifestyle.jpg ภายหลัง</small>
+</div>
+<figcaption data-en="Keep charging. Keep going." data-th="ชาร์จต่อได้ ไม่ต้องหยุดความสนุก">ชาร์จต่อได้ ไม่ต้องหยุดความสนุก</figcaption>
+</figure>
+<figure class="hero-slide" data-slide="">
+<div class="photo-placeholder photo-placeholder--event">
+<div aria-hidden="true" class="placeholder-confetti"><i></i><i></i><i></i><i></i><i></i></div>
+<div aria-hidden="true" class="placeholder-powerbank"><span></span></div>
+<span class="placeholder-kicker" data-en="Placeholder" data-th="ภาพตัวอย่าง">ภาพตัวอย่าง</span>
+<p data-en="Event or partner photo" data-th="ภาพกิจกรรม อีเวนต์ หรือพาร์ทเนอร์">ภาพกิจกรรม อีเวนต์ หรือพาร์ทเนอร์</p>
+<small data-en="Replace later with image/hero-event.jpg" data-th="เปลี่ยนเป็นไฟล์ image/hero-event.jpg ภายหลัง">เปลี่ยนเป็นไฟล์ image/hero-event.jpg ภายหลัง</small>
+</div>
+<figcaption data-en="Power every important moment" data-th="เติมพลังให้ทุกช่วงเวลาสำคัญ">เติมพลังให้ทุกช่วงเวลาสำคัญ</figcaption>
+</figure>
+</div>
+<button aria-label="ภาพก่อนหน้า" class="slider-arrow slider-arrow--prev ripple-target" data-slider-prev="" type="button">‹</button>
+<button aria-label="ภาพถัดไป" class="slider-arrow slider-arrow--next ripple-target" data-slider-next="" type="button">›</button>
+<div class="slider-footer">
+<div aria-label="เลือกภาพ" class="slider-dots" role="tablist">
+<button aria-label="ภาพที่ 1" class="slider-dot is-active ripple-target" data-slide-to="0" type="button"></button>
+<button aria-label="ภาพที่ 2" class="slider-dot ripple-target" data-slide-to="1" type="button"></button>
+<button aria-label="ภาพที่ 3" class="slider-dot ripple-target" data-slide-to="2" type="button"></button>
+</div>
+<span class="slider-hint" data-en="Click or swipe through" data-th="คลิกหรือเลื่อนดูภาพ">คลิกหรือเลื่อนดูภาพ</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- =======================
             HOW IT WORKS
     ======================= -->
-
-    <section class="how-it-works" id="service">
-
-        <h2 data-th="วิธีการเช่า" data-en="How to Rent">วิธีการเช่า</h2>
-
-        <div class="steps">
-
-            <div class="step">
-                <span class="step-number">01</span>
-                <div class="step-media">
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="4" y="4" width="16" height="16" rx="1.5" stroke="currentColor" stroke-width="1.3"/>
-                        <path d="M4 9h4M4 4v4M9 4v4M15 4v4M20 4v4M20 9h-4M4 15h4M4 20v-4M9 20v-4M15 20v-4M20 20v-4M20 15h-4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
-                    </svg>
-                    <span class="step-media-tag" data-th="ใส่ PNG ขั้นตอนนี้" data-en="Add step PNG">ใส่ PNG ขั้นตอนนี้</span>
-                </div>
-                <h3 data-th="Scan QR Code" data-en="Scan QR Code">Scan QR Code</h3>
-                <p data-th="สแกน QR Code หน้าตู้ เพื่อเริ่มต้นการเช่าได้ทันที" data-en="Scan the QR code on the station to start renting instantly.">
+<section class="how-it-works" id="service">
+<h2 data-en="How to Rent" data-th="วิธีการเช่า">วิธีการเช่า</h2>
+<div class="steps">
+<div class="step reveal interactive-card">
+<span class="step-number">01</span>
+<div class="step-media">
+<svg fill="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<rect height="16" rx="1.5" stroke="currentColor" stroke-width="1.3" width="16" x="4" y="4"></rect>
+<path d="M4 9h4M4 4v4M9 4v4M15 4v4M20 4v4M20 9h-4M4 15h4M4 20v-4M9 20v-4M15 20v-4M20 20v-4M20 15h-4" stroke="currentColor" stroke-linecap="round" stroke-width="1.3"></path>
+</svg>
+<span class="step-media-tag" data-en="Add step PNG" data-th="ใส่ PNG ขั้นตอนนี้">ใส่ PNG ขั้นตอนนี้</span>
+</div>
+<h3 data-en="Scan QR Code" data-th="Scan QR Code">Scan QR Code</h3>
+<p data-en="Scan the QR code on the station to start renting instantly." data-th="สแกน QR Code หน้าตู้ เพื่อเริ่มต้นการเช่าได้ทันที">
                     สแกน QR Code หน้าตู้
                     เพื่อเริ่มต้นการเช่าได้ทันที
                 </p>
-            </div>
-
-            <div class="step">
-                <span class="step-number">02</span>
-                <div class="step-media">
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="4" y="4" width="16" height="16" rx="1.5" stroke="currentColor" stroke-width="1.3"/>
-                        <path d="M4 9h4M4 4v4M9 4v4M15 4v4M20 4v4M20 9h-4M4 15h4M4 20v-4M9 20v-4M15 20v-4M20 20v-4M20 15h-4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
-                    </svg>
-                    <span class="step-media-tag" data-th="ใส่ PNG ขั้นตอนนี้" data-en="Add step PNG">ใส่ PNG ขั้นตอนนี้</span>
-                </div>
-                <h3 data-th="Pick Up Power Bank" data-en="Pick Up Power Bank">Pick Up Power Bank</h3>
-                <p data-th="รับ Power Bank จากช่อง" data-en="Take the power bank from the slot.">
+</div>
+<div class="step reveal interactive-card">
+<span class="step-number">02</span>
+<div class="step-media">
+<svg fill="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<rect height="16" rx="1.5" stroke="currentColor" stroke-width="1.3" width="16" x="4" y="4"></rect>
+<path d="M4 9h4M4 4v4M9 4v4M15 4v4M20 4v4M20 9h-4M4 15h4M4 20v-4M9 20v-4M15 20v-4M20 20v-4M20 15h-4" stroke="currentColor" stroke-linecap="round" stroke-width="1.3"></path>
+</svg>
+<span class="step-media-tag" data-en="Add step PNG" data-th="ใส่ PNG ขั้นตอนนี้">ใส่ PNG ขั้นตอนนี้</span>
+</div>
+<h3 data-en="Pick Up Power Bank" data-th="Pick Up Power Bank">Pick Up Power Bank</h3>
+<p data-en="Take the power bank from the slot." data-th="รับ Power Bank จากช่อง">
                     รับ Power Bank
                     จากช่อง
                 </p>
-            </div>
-
-            <div class="step">
-                <span class="step-number">03</span>
-                <div class="step-media">
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="4" y="4" width="16" height="16" rx="1.5" stroke="currentColor" stroke-width="1.3"/>
-                        <path d="M4 9h4M4 4v4M9 4v4M15 4v4M20 4v4M20 9h-4M4 15h4M4 20v-4M9 20v-4M15 20v-4M20 20v-4M20 15h-4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
-                    </svg>
-                    <span class="step-media-tag" data-th="ใส่ PNG ขั้นตอนนี้" data-en="Add step PNG">ใส่ PNG ขั้นตอนนี้</span>
-                </div>
-                <h3 data-th="Return Anywhere" data-en="Return Anywhere">Return Anywhere</h3>
-                <p data-th="คืนที่ตู้ 24CHARGE ได้ทุกสาขาทั่วประเทศ" data-en="Return at any 24CHARGE station nationwide.">
+</div>
+<div class="step reveal interactive-card">
+<span class="step-number">03</span>
+<div class="step-media">
+<svg fill="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<rect height="16" rx="1.5" stroke="currentColor" stroke-width="1.3" width="16" x="4" y="4"></rect>
+<path d="M4 9h4M4 4v4M9 4v4M15 4v4M20 4v4M20 9h-4M4 15h4M4 20v-4M9 20v-4M15 20v-4M20 20v-4M20 15h-4" stroke="currentColor" stroke-linecap="round" stroke-width="1.3"></path>
+</svg>
+<span class="step-media-tag" data-en="Add step PNG" data-th="ใส่ PNG ขั้นตอนนี้">ใส่ PNG ขั้นตอนนี้</span>
+</div>
+<h3 data-en="Return Anywhere" data-th="Return Anywhere">Return Anywhere</h3>
+<p data-en="Return at any 24CHARGE station nationwide." data-th="คืนที่ตู้ 24CHARGE ได้ทุกสาขาทั่วประเทศ">
                     คืนที่ตู้ 24CHARGE
                     ได้ทุกสาขาทั่วประเทศ
                 </p>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- =======================
+</div>
+</div>
+</section>
+<!-- =======================
             PRICING
     ======================= -->
-
-    <section class="pricing" id="pricing">
-
-        <h2 data-th="อัตราค่าเช่า" data-en="Rental Rates">อัตราค่าเช่า</h2>
-        <p class="section-lead" data-th="จ่ายเท่าที่ใช้" data-en="Pay only for what you use">จ่ายเท่าที่ใช้</p>
-
-        <div class="price-hero">
-            <p class="price-hero-label" data-th="เริ่มต้นเพียง" data-en="Starting from">เริ่มต้นเพียง</p>
-            <p class="price-hero-value">
-                <span class="num">20</span>
-                <span class="unit" data-th="บาท / ชั่วโมง" data-en="THB / hour">บาท / ชั่วโมง</span>
-            </p>
-            <p class="price-hero-note" data-th="คิดตามจริงเป็นชั่วโมง สูงสุดไม่เกิน 80 บาทต่อวัน" data-en="Billed hourly, capped at 80 THB per day">คิดตามจริงเป็นชั่วโมง สูงสุดไม่เกิน 80 บาทต่อวัน</p>
-        </div>
-
-        <div class="price-grid">
-
-            <div class="price-card price-card--brand">
-                <p class="price-label" data-th="ต่อวัน (สูงสุด)" data-en="Per day (max)">ต่อวัน (สูงสุด)</p>
-                <p class="price-value"><span class="num">80</span><small data-th="บาท" data-en="THB">บาท</small></p>
-            </div>
-
-            <div class="price-card price-card--brand">
-                <p class="price-label" data-th="ค่ามัดจำ" data-en="Deposit">ค่ามัดจำ</p>
-                <p class="price-value"><span class="num">480</span><small data-th="บาท" data-en="THB">บาท</small></p>
-                <p class="price-note" data-th="คืนเข้า Wallet เมื่อใช้งานเสร็จ" data-en="Refunded to your wallet when returned">คืนเข้า Wallet เมื่อใช้งานเสร็จ</p>
-            </div>
-
-        </div>
-
-        <button class="price-table-toggle" aria-expanded="false">
-            <span class="toggle-label" data-th="ดูตารางราคาเต็ม" data-en="View full price table">ดูตารางราคาเต็ม</span>
-            <span class="toggle-icon">▾</span>
-        </button>
-
-        <div class="price-table-wrap">
-            <div class="price-table-inner">
-                <table>
-                    <tr>
-                        <th data-th="ระยะเวลา" data-en="Duration">ระยะเวลา</th>
-                        <th data-th="ราคารวม" data-en="Total price">ราคารวม</th>
-                    </tr>
-
-                    <tr>
-                        <td data-th="1 ชั่วโมง" data-en="1 hour">1 ชั่วโมง</td>
-                        <td>20 <span data-th="บาท" data-en="THB">บาท</span></td>
-                    </tr>
-
-                    <tr>
-                        <td data-th="2 ชั่วโมง" data-en="2 hours">2 ชั่วโมง</td>
-                        <td>40 <span data-th="บาท" data-en="THB">บาท</span></td>
-                    </tr>
-
-                    <tr>
-                        <td data-th="3 ชั่วโมง" data-en="3 hours">3 ชั่วโมง</td>
-                        <td>60 <span data-th="บาท" data-en="THB">บาท</span></td>
-                    </tr>
-
-                    <tr class="price-row--highlight">
-                        <td data-th="4-24 ชั่วโมง" data-en="4-24 hours">4-24 ชั่วโมง</td>
-                        <td>80 <span data-th="บาท" data-en="THB">บาท</span></td>
-                    </tr>
-
-                    <tr>
-                        <td data-th="2 วัน" data-en="2 days">2 วัน</td>
-                        <td>160 <span data-th="บาท" data-en="THB">บาท</span></td>
-                    </tr>
-
-                    <tr>
-                        <td data-th="3 วัน" data-en="3 days">3 วัน</td>
-                        <td>240 <span data-th="บาท" data-en="THB">บาท</span></td>
-                    </tr>
-
-                    <tr>
-                        <td data-th="4 วัน" data-en="4 days">4 วัน</td>
-                        <td>320 <span data-th="บาท" data-en="THB">บาท</span></td>
-                    </tr>
-
-                    <tr>
-                        <td data-th="5 วัน" data-en="5 days">5 วัน</td>
-                        <td>400 <span data-th="บาท" data-en="THB">บาท</span></td>
-                    </tr>
-
-                    <tr class="price-row--highlight">
-                        <td data-th="6 วัน (สูงสุด)" data-en="6 days (max)">6 วัน (สูงสุด)</td>
-                        <td>480 <span data-th="บาท" data-en="THB">บาท</span></td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- =======================
+<section class="pricing" id="pricing">
+<h2 data-en="Rental Rates" data-th="อัตราค่าเช่า">อัตราค่าเช่า</h2>
+<p class="section-lead" data-en="Pay only for what you use" data-th="ตัดจ่ายเท่าที่ใช้">ตัดจ่ายเท่าที่ใช้</p>
+<div class="price-hero">
+<p class="price-hero-label" data-en="Starting from" data-th="เริ่มต้นเพียง">เริ่มต้นเพียง</p>
+<p class="price-hero-value">
+<span class="num">20</span>
+<span class="unit" data-en="THB / hour" data-th="บาท / ชั่วโมง">บาท / ชั่วโมง</span>
+</p>
+<p class="price-hero-note" data-en="Billed hourly, capped at 80 THB per day" data-th="คิดตามจริงเป็นชั่วโมง สูงสุดไม่เกิน 80 บาทต่อวัน">คิดตามจริงเป็นชั่วโมง สูงสุดไม่เกิน 80 บาทต่อวัน</p>
+</div>
+<div class="price-grid">
+<div class="price-card price-card--brand reveal interactive-card">
+<p class="price-label" data-en="Per day (max)" data-th="ต่อวัน (สูงสุด)">ต่อวัน (สูงสุด)</p>
+<p class="price-value"><span class="num">80</span><small data-en="THB" data-th="บาท">บาท</small></p>
+</div>
+<div class="price-card price-card--brand reveal interactive-card">
+<p class="price-label" data-en="Deposit" data-th="ค่ามัดจำ">ค่ามัดจำ</p>
+<p class="price-value"><span class="num">280</span><small data-en="THB" data-th="บาท">บาท</small></p>
+<p class="price-note" data-en="Returned to your wallet immediately after use" data-th="คืนเข้า Wallet ทันทีเมื่อใช้งานเสร็จ">คืนเข้า Wallet ทันทีเมื่อใช้งานเสร็จ</p>
+</div>
+</div><div aria-label="ตัวอย่างยอดตัดจ่าย" class="pricing-friendly-note reveal">
+<span aria-hidden="true" class="friendly-note-icon">✦</span>
+<p data-en="Example totals: 3 days 240 THB · 4 days 320 THB" data-th="ตัวอย่างยอดตัดจ่าย: 3 วัน 240 บาท · 4 วัน 320 บาท">ตัวอย่างยอดตัดจ่าย: 3 วัน 240 บาท · 4 วัน 320 บาท</p>
+</div>
+<button aria-expanded="false" class="price-table-toggle ripple-target">
+<span class="toggle-label" data-en="View full price table" data-th="ดูตารางราคาเต็ม">ดูตารางราคาเต็ม</span>
+<span class="toggle-icon">▾</span>
+</button>
+<div class="price-table-wrap">
+<div class="price-table-inner">
+<table>
+<tr>
+<th data-en="Duration" data-th="ระยะเวลา">ระยะเวลา</th>
+<th data-en="Total price" data-th="ราคารวม">ราคารวม</th>
+</tr>
+<tr>
+<td data-en="1 hour" data-th="1 ชั่วโมง">1 ชั่วโมง</td>
+<td>20 <span data-en="THB" data-th="บาท">บาท</span></td>
+</tr>
+<tr>
+<td data-en="2 hours" data-th="2 ชั่วโมง">2 ชั่วโมง</td>
+<td>40 <span data-en="THB" data-th="บาท">บาท</span></td>
+</tr>
+<tr>
+<td data-en="3 hours" data-th="3 ชั่วโมง">3 ชั่วโมง</td>
+<td>60 <span data-en="THB" data-th="บาท">บาท</span></td>
+</tr>
+<tr class="price-row--highlight">
+<td data-en="4-24 hours" data-th="4-24 ชั่วโมง">4-24 ชั่วโมง</td>
+<td>80 <span data-en="THB" data-th="บาท">บาท</span></td>
+</tr>
+<tr>
+<td data-en="2 days" data-th="2 วัน">2 วัน</td>
+<td>160 <span data-en="THB" data-th="บาท">บาท</span></td>
+</tr>
+<tr class="price-row--featured">
+<td data-en="3 days" data-th="3 วัน">3 วัน</td>
+<td>240 <span data-en="THB" data-th="บาท">บาท</span></td>
+</tr>
+<tr class="price-row--featured">
+<td data-en="4 days" data-th="4 วัน">4 วัน</td>
+<td>320 <span data-en="THB" data-th="บาท">บาท</span></td>
+</tr>
+<tr>
+<td data-en="5 days" data-th="5 วัน">5 วัน</td>
+<td>400 <span data-en="THB" data-th="บาท">บาท</span></td>
+</tr>
+<tr class="price-row--highlight">
+<td data-en="6 days (max)" data-th="6 วัน (สูงสุด)">6 วัน (สูงสุด)</td>
+<td>480 <span data-en="THB" data-th="บาท">บาท</span></td>
+</tr>
+</table>
+</div>
+</div>
+</section>
+<!-- =======================
           PAYMENT METHODS
     ======================= -->
-
-    <section class="payment" id="payment">
-
-        <h2 data-th="วิธีการชำระเงิน" data-en="Payment Methods">วิธีการชำระเงิน</h2>
-        <p class="section-lead" data-th="เลือกช่องทางที่สะดวก — ชำระผ่านบัตรเครดิต/เดบิต ไม่ต้องวางเงินมัดจำ" data-en="Choose what works for you — pay by credit/debit card with no deposit required">
-            เลือกช่องทางที่สะดวก — ชำระผ่านบัตรเครดิต/เดบิต ไม่ต้องวางเงินมัดจำ
-        </p>
-
-        <div class="payment-grid">
-
-            <div class="payment-card payment-card--nodeposit">
-                <span class="payment-badge" data-th="ไม่มีค่ามัดจำ" data-en="No deposit">ไม่มีค่ามัดจำ</span>
-                <img src="image/visa.png" alt="Visa">
-                <p class="payment-name">Visa</p>
-            </div>
-
-            <div class="payment-card payment-card--nodeposit">
-                <span class="payment-badge" data-th="ไม่มีค่ามัดจำ" data-en="No deposit">ไม่มีค่ามัดจำ</span>
-                <img src="image/mastercard.png" alt="Mastercard">
-                <p class="payment-name">Mastercard</p>
-            </div>
-
-            <div class="payment-card">
-                <img src="image/promptpay.png" alt="พร้อมเพย์">
-                <p class="payment-name">พร้อมเพย์</p>
-            </div>
-
-            <div class="payment-card">
-                <img src="image/truemoney.png" alt="TrueMoney Wallet">
-                <p class="payment-name">TrueMoney Wallet</p>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- =======================
+<section class="payment" id="payment">
+<h2 data-en="Payment Methods" data-th="วิธีการชำระเงิน">วิธีการชำระเงิน</h2>
+<p class="section-lead" data-en="Choose what works for you — pay by Direct Debit or credit card with no deposit required" data-th="เลือกช่องทางที่สะดวก — ชำระผ่าน Direct Debit และบัตรเครดิต ไม่ต้องวางเงินมัดจำ">เลือกช่องทางที่สะดวก — ชำระผ่าน Direct Debit และบัตรเครดิต ไม่ต้องวางเงินมัดจำ</p>
+<div class="payment-grid"><div class="payment-card payment-card--nodeposit payment-card--direct-debit interactive-card reveal">
+<span class="payment-badge" data-en="No deposit" data-th="ไม่มีค่ามัดจำ">ไม่มีค่ามัดจำ</span>
+<div aria-hidden="true" class="payment-icon payment-icon--bank">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 19.5L24 9l17 10.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
+<path d="M10 21h28M12.5 23.5v13M20 23.5v13M28 23.5v13M35.5 23.5v13M8 39h32" stroke="currentColor" stroke-linecap="round" stroke-width="3"></path>
+</svg>
+</div>
+<p class="payment-name" data-en="Direct Debit" data-th="Direct Debit">Direct Debit</p>
+<p class="payment-detail" data-en="Linked to your bank account" data-th="ผูกกับบัญชีธนาคาร">ผูกกับบัญชีธนาคาร</p>
+</div>
+<div class="payment-card payment-card--nodeposit reveal interactive-card">
+<span class="payment-badge" data-en="No deposit" data-th="ไม่มีค่ามัดจำ">ไม่มีค่ามัดจำ</span>
+<img alt="Visa" src="image/visa.png"/>
+<p class="payment-name">Visa</p>
+</div>
+<div class="payment-card payment-card--nodeposit reveal interactive-card">
+<span class="payment-badge" data-en="No deposit" data-th="ไม่มีค่ามัดจำ">ไม่มีค่ามัดจำ</span>
+<img alt="Mastercard" src="image/master.png"/>
+<p class="payment-name">Mastercard</p>
+</div>
+<div class="payment-card reveal interactive-card">
+<img alt="พร้อมเพย์" src="image/promptpay.png"/>
+<p class="payment-name">พร้อมเพย์</p>
+</div>
+<div class="payment-card reveal interactive-card">
+<img alt="TrueMoney Wallet" src="image/truemoney.png"/>
+<p class="payment-name">TrueMoney Wallet</p>
+</div>
+</div><p class="payment-direct-note reveal" data-en="Direct Debit automatically charges the linked bank account based on actual usage." data-th="Direct Debit จะตัดยอดตามการใช้งานจริงจากบัญชีธนาคารที่ผูกไว้">Direct Debit จะตัดยอดตามการใช้งานจริงจากบัญชีธนาคารที่ผูกไว้</p>
+</section>
+<!-- =======================
           CERTIFICATES
     ======================= -->
-
-    <section class="certificates" id="certificate">
-
-        <h2 data-th="ใบรับรองมาตรฐาน" data-en="Certifications">ใบรับรองมาตรฐาน</h2>
-
-        <div class="certificate-list">
-            <a href="#" data-th="มอก. (มาตรฐานผลิตภัณฑ์อุตสาหกรรม)" data-en="TISI (Thai Industrial Standard)">มอก. (มาตรฐานผลิตภัณฑ์อุตสาหกรรม)</a>
-            <a href="#">CCC (China Compulsory Certification)</a>
-            <a href="#">RoHS</a>
-        </div>
-
-        <div class="device-gallery">
-            <p class="device-gallery-label" data-th="ข้อมูลเครื่องอุปกรณ์" data-en="Device Gallery">ข้อมูลเครื่องอุปกรณ์</p>
-            <div class="device-grid">
-                <div class="device-slot">
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="3" y="5" width="18" height="14" rx="1.5" stroke="currentColor" stroke-width="1.4"/>
-                        <path d="M3 15l4.5-4.5a1.5 1.5 0 0 1 2.12 0L15 15" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
-                        <circle cx="8.5" cy="9.5" r="1.4" stroke="currentColor" stroke-width="1.4"/>
-                    </svg>
-                    <span data-th="เพิ่มรูปตู้เช่า" data-en="Add station photo">เพิ่มรูปตู้เช่า</span>
-                </div>
-                <div class="device-slot">
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="3" y="5" width="18" height="14" rx="1.5" stroke="currentColor" stroke-width="1.4"/>
-                        <path d="M3 15l4.5-4.5a1.5 1.5 0 0 1 2.12 0L15 15" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
-                        <circle cx="8.5" cy="9.5" r="1.4" stroke="currentColor" stroke-width="1.4"/>
-                    </svg>
-                    <span data-th="เพิ่มรูป Power Bank" data-en="Add power bank photo">เพิ่มรูป Power Bank</span>
-                </div>
-                <div class="device-slot">
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="3" y="5" width="18" height="14" rx="1.5" stroke="currentColor" stroke-width="1.4"/>
-                        <path d="M3 15l4.5-4.5a1.5 1.5 0 0 1 2.12 0L15 15" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
-                        <circle cx="8.5" cy="9.5" r="1.4" stroke="currentColor" stroke-width="1.4"/>
-                    </svg>
-                    <span data-th="เพิ่มรูปการใช้งาน" data-en="Add usage photo">เพิ่มรูปการใช้งาน</span>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- =======================
+<section class="certificates" id="certificate">
+<h2 data-en="Certifications" data-th="ใบรับรองมาตรฐาน">ใบรับรองมาตรฐาน</h2>
+<div class="certificate-list">
+<a class="reveal" data-en="TISI (Thai Industrial Standard)" data-th="มอก. (มาตรฐานผลิตภัณฑ์อุตสาหกรรม)" href="#">มอก. (มาตรฐานผลิตภัณฑ์อุตสาหกรรม)</a>
+<a class="reveal" href="#">CCC (China Compulsory Certification)</a>
+<a class="reveal" href="#">RoHS</a>
+<a class="reveal" href="#">ISO 9001</a>
+</div>
+<div class="device-gallery">
+<p class="device-gallery-label" data-en="Device Gallery" data-th="ข้อมูลเครื่องอุปกรณ์">ข้อมูลเครื่องอุปกรณ์</p>
+<div class="device-grid">
+<div class="device-slot reveal interactive-card">
+<svg fill="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<rect height="14" rx="1.5" stroke="currentColor" stroke-width="1.4" width="18" x="3" y="5"></rect>
+<path d="M3 15l4.5-4.5a1.5 1.5 0 0 1 2.12 0L15 15" stroke="currentColor" stroke-linejoin="round" stroke-width="1.4"></path>
+<circle cx="8.5" cy="9.5" r="1.4" stroke="currentColor" stroke-width="1.4"></circle>
+</svg>
+<span data-en="Add station photo" data-th="เพิ่มรูปตู้เช่า">เพิ่มรูปตู้เช่า</span>
+</div>
+<div class="device-slot reveal interactive-card">
+<svg fill="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<rect height="14" rx="1.5" stroke="currentColor" stroke-width="1.4" width="18" x="3" y="5"></rect>
+<path d="M3 15l4.5-4.5a1.5 1.5 0 0 1 2.12 0L15 15" stroke="currentColor" stroke-linejoin="round" stroke-width="1.4"></path>
+<circle cx="8.5" cy="9.5" r="1.4" stroke="currentColor" stroke-width="1.4"></circle>
+</svg>
+<span data-en="Add power bank photo" data-th="เพิ่มรูป Power Bank">เพิ่มรูป Power Bank</span>
+</div>
+<div class="device-slot reveal interactive-card">
+<svg fill="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<rect height="14" rx="1.5" stroke="currentColor" stroke-width="1.4" width="18" x="3" y="5"></rect>
+<path d="M3 15l4.5-4.5a1.5 1.5 0 0 1 2.12 0L15 15" stroke="currentColor" stroke-linejoin="round" stroke-width="1.4"></path>
+<circle cx="8.5" cy="9.5" r="1.4" stroke="currentColor" stroke-width="1.4"></circle>
+</svg>
+<span data-en="Add usage photo" data-th="เพิ่มรูปการใช้งาน">เพิ่มรูปการใช้งาน</span>
+</div>
+</div>
+</div>
+</section>
+<!-- =======================
           OUR PARTNERS
     ======================= -->
-
-    <section class="partners" id="partners">
-
-        <h2 data-th="Our Partners" data-en="Our Partners">Our Partners</h2>
-
-        <p class="partners-subtitle" data-th="พันธมิตรที่ร่วมให้บริการกับ 24CHARGE" data-en="Partners who bring 24CHARGE to more places">
+<section class="partners" id="partners">
+<h2 data-en="Our Partners" data-th="Our Partners">Our Partners</h2>
+<p class="partners-subtitle" data-en="Partners who bring 24CHARGE to more places" data-th="พันธมิตรที่ร่วมให้บริการกับ 24CHARGE">
             พันธมิตรที่ร่วมให้บริการกับ 24CHARGE
         </p>
-
-        <div class="partners-grid">
-            <div class="partner-card"><img src="image/partner1.png" alt="Partner 1"></div>
-            <div class="partner-card"><img src="image/partner2.png" alt="Partner 2"></div>
-            <div class="partner-card"><img src="image/partner3.png" alt="Partner 3"></div>
-            <div class="partner-card"><img src="image/partner4.png" alt="Partner 4"></div>
-            <div class="partner-card"><img src="image/partner5.png" alt="Partner 5"></div>
-            <div class="partner-card"><img src="image/partner6.png" alt="Partner 6"></div>
-        </div>
-
-    </section>
-
-    <!-- =======================
+<div class="partners-grid">
+<div class="partner-card reveal interactive-card"><img alt="Partner 1" src="image/partner1.png"/></div>
+<div class="partner-card reveal interactive-card"><img alt="Partner 2" src="image/partner2.png"/></div>
+<div class="partner-card reveal interactive-card"><img alt="Partner 3" src="image/partner3.png"/></div>
+<div class="partner-card reveal interactive-card"><img alt="Partner 4" src="image/partner4.png"/></div>
+<div class="partner-card reveal interactive-card"><img alt="Partner 5" src="image/partner5.png"/></div>
+<div class="partner-card reveal interactive-card"><img alt="Partner 6" src="image/partner6.png"/></div>
+</div>
+</section>
+<!-- =======================
             FAQ
     ======================= -->
-
-    <section class="faq" id="faq">
-
-        <h2 data-th="คำถามที่พบบ่อย" data-en="Frequently Asked Questions">คำถามที่พบบ่อย</h2>
-
-        <div class="faq-item">
-            <button class="faq-question">
-                <span data-th="หาตู้ 24Charge ได้จากไหน?" data-en="Where can I find a 24Charge station?">หาตู้ 24Charge ได้จากไหน?</span>
-                <span class="faq-icon">+</span>
-            </button>
-            <div class="faq-answer">
-                <p data-th="สามารถดูตำแหน่งตู้ใกล้เคียงทั้งหมด ซึ่งแสดงจำนวนพาวเวอร์แบงค์ที่พร้อมให้เช่า และช่องว่างสำหรับคืน ได้จากแผนที่ภายในแอป 24Charge" data-en="You can see every nearby station on the map inside the 24Charge app, including how many power banks are available and how many return slots are free.">
-                    สามารถดูตำแหน่งตู้ใกล้เคียงทั้งหมด <br>
-                    ซึ่งแสดงจำนวนพาวเวอร์แบงค์ที่พร้อมให้เช่า <br>
+<section class="faq" id="faq">
+<h2 data-en="Frequently Asked Questions" data-th="คำถามที่พบบ่อย">คำถามที่พบบ่อย</h2>
+<div class="faq-item">
+<button class="faq-question ripple-target">
+<span data-en="Where can I find a 24Charge station?" data-th="หาตู้ 24Charge ได้จากไหน?">หาตู้ 24Charge ได้จากไหน?</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p data-en="You can see every nearby station on the map inside the 24Charge app, including how many power banks are available and how many return slots are free." data-th="สามารถดูตำแหน่งตู้ใกล้เคียงทั้งหมด ซึ่งแสดงจำนวนพาวเวอร์แบงค์ที่พร้อมให้เช่า และช่องว่างสำหรับคืน ได้จากแผนที่ภายในแอป 24Charge">
+                    สามารถดูตำแหน่งตู้ใกล้เคียงทั้งหมด <br/>
+                    ซึ่งแสดงจำนวนพาวเวอร์แบงค์ที่พร้อมให้เช่า <br/>
                     และช่องว่างสำหรับคืน ได้จากแผนที่ภายในแอป 24Charge
                 </p>
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <button class="faq-question">
-                <span data-th="เช่าพาวเวอร์แบงค์อย่างไร?" data-en="How do I rent a power bank?">เช่าพาวเวอร์แบงค์อย่างไร?</span>
-                <span class="faq-icon">+</span>
-            </button>
-            <div class="faq-answer">
-                <p data-th="เปิดแอป 24Charge หรือหน้าเว็บไซต์ แล้วสแกน QR Code บนตู้เพื่อเริ่มเช่า" data-en="Open the 24Charge app or website, then scan the QR code on the station to start renting.">
-                    เปิดแอป 24Charge หรือหน้าเว็บไซต์ <br>
+</div>
+</div>
+<div class="faq-item">
+<button class="faq-question ripple-target">
+<span data-en="How do I rent a power bank?" data-th="เช่าพาวเวอร์แบงค์อย่างไร?">เช่าพาวเวอร์แบงค์อย่างไร?</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p data-en="Open the 24Charge app or website, then scan the QR code on the station to start renting." data-th="เปิดแอป 24Charge หรือหน้าเว็บไซต์ แล้วสแกน QR Code บนตู้เพื่อเริ่มเช่า">
+                    เปิดแอป 24Charge หรือหน้าเว็บไซต์ <br/>
                     แล้วสแกน QR Code บนตู้เพื่อเริ่มเช่า
                 </p>
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <button class="faq-question">
-                <span data-th="คืนพาวเวอร์แบงค์อย่างไร?" data-en="How do I return a power bank?">คืนพาวเวอร์แบงค์อย่างไร?</span>
-                <span class="faq-icon">+</span>
-            </button>
-            <div class="faq-answer">
-                <p data-th="นำไปคืนที่ตู้ 24Charge ใดก็ได้ ใส่พาวเวอร์แบงค์ลงช่องว่าง ระบบจะแสดงผลการคืน พร้อมสรุปรายละเอียดการเช่า ในการคืนพาวเวอร์แบงค์ ผู้ใช้ต้องใส่พาวเวอร์แบงค์ โดยหันด้านที่มีสายชาร์จเข้าไปในช่องว่างของตู้" data-en="Return it at any 24Charge station by inserting the power bank into an empty slot, cable-end first. The system will confirm the return and show your rental summary.">
-                    นำไปคืนที่ตู้ 24Charge ใดก็ได้ ใส่พาวเวอร์แบงค์ลงช่องว่าง <br>
-                    ระบบจะแสดงผลการคืน พร้อมสรุปรายละเอียดการเช่า <br>
-                    ในการคืนพาวเวอร์แบงค์ ผู้ใช้ต้องใส่พาวเวอร์แบงค์ <br>
+</div>
+</div>
+<div class="faq-item">
+<button class="faq-question ripple-target">
+<span data-en="How do I return a power bank?" data-th="คืนพาวเวอร์แบงค์อย่างไร?">คืนพาวเวอร์แบงค์อย่างไร?</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p data-en="Return it at any 24Charge station by inserting the power bank into an empty slot, cable-end first. The system will confirm the return and show your rental summary." data-th="นำไปคืนที่ตู้ 24Charge ใดก็ได้ ใส่พาวเวอร์แบงค์ลงช่องว่าง ระบบจะแสดงผลการคืน พร้อมสรุปรายละเอียดการเช่า ในการคืนพาวเวอร์แบงค์ ผู้ใช้ต้องใส่พาวเวอร์แบงค์ โดยหันด้านที่มีสายชาร์จเข้าไปในช่องว่างของตู้">
+                    นำไปคืนที่ตู้ 24Charge ใดก็ได้ ใส่พาวเวอร์แบงค์ลงช่องว่าง <br/>
+                    ระบบจะแสดงผลการคืน พร้อมสรุปรายละเอียดการเช่า <br/>
+                    ในการคืนพาวเวอร์แบงค์ ผู้ใช้ต้องใส่พาวเวอร์แบงค์ <br/>
                     โดยหันด้านที่มีสายชาร์จเข้าไปในช่องว่างของตู้
                 </p>
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <button class="faq-question">
-                <span data-th="คิดค่าบริการอย่างไร?" data-en="How is the fee calculated?">คิดค่าบริการอย่างไร?</span>
-                <span class="faq-icon">+</span>
-            </button>
-            <div class="faq-answer">
-                <p data-th="ค่าบริการชั่วโมงละ 20 บาท แต่ไม่เกิน 80 บาทต่อวัน เศษของชั่วโมงจะถูกคิดเป็นชั่วโมงเต็ม ถ้าเช่ามากกว่า 6 วัน ระบบจะถือว่า &quot;ไม่คืน&quot; และจะถูกคิดเงิน 480 บาท ซึ่งเป็นเงินมัดจำ อย่างไรก็ดี ในช่วงกิจกรรมพิเศษ เช่น คอนเสิร์ต เทศกาลดนตรี นิทรรศการ งานแฟร์ และการแสดงพิเศษอื่นๆ อัตราค่าบริการและ/หรือจำนวนเงินมัดจำอาจมีการปรับเปลี่ยน ทั้งนี้ รายละเอียดการปรับเปลี่ยนดังกล่าวจะแสดงและแจ้งให้ทราบอย่างชัดเจน ณ สถานีให้บริการในขณะทำการเช่า" data-en="The fee is 20 THB per hour, capped at 80 THB per day. Partial hours round up to a full hour. Renting beyond 6 days is treated as non-return and the 480 THB deposit will be charged. During special events such as concerts, music festivals, exhibitions and fairs, rates and/or deposit amounts may be adjusted; any changes will be clearly shown at the rental station at the time of rental.">
-                    ค่าบริการชั่วโมงละ 20 บาท แต่ไม่เกิน 80 บาทต่อวัน <br>
-                    เศษของชั่วโมงจะถูกคิดเป็นชั่วโมงเต็ม <br>
-                    ถ้าเช่ามากกว่า 6 วัน ระบบจะถือว่า "ไม่คืน" <br>
-                    และจะถูกคิดเงิน 480 บาท ซึ่งเป็นเงินมัดจำ
-                    <br><br>
-                    อย่างไรก็ดี ในช่วงกิจกรรมพิเศษ เช่น คอนเสิร์ต เทศกาลดนตรี <br>
-                    นิทรรศการ งานแฟร์ และการแสดงพิเศษอื่นๆ อัตราค่าบริการและ/<br>
-                    หรือจำนวนเงินมัดจำอาจมีการปรับเปลี่ยน ทั้งนี้ รายละเอียด<br>
-                    การปรับเปลี่ยนดังกล่าวจะแสดงและแจ้งให้ทราบอย่างชัดเจน ณ สถานี<br>
+</div>
+</div>
+<div class="faq-item">
+<button class="faq-question ripple-target">
+<span data-en="How is the fee calculated?" data-th="คิดค่าบริการอย่างไร?">คิดค่าบริการอย่างไร?</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p data-en="The fee is 20 THB per hour, capped at 80 THB per day. Partial hours round up to a full hour. Renting beyond 6 days is treated as non-return and the 480 THB deposit will be charged. During special events such as concerts, music festivals, exhibitions and fairs, rates and/or deposit amounts may be adjusted; any changes will be clearly shown at the rental station at the time of rental." data-th='ค่าบริการชั่วโมงละ 20 บาท แต่ไม่เกิน 80 บาทต่อวัน เศษของชั่วโมงจะถูกคิดเป็นชั่วโมงเต็ม ถ้าเช่ามากกว่า 6 วัน ระบบจะถือว่า "ไม่คืน" และจะถูกคิดเงิน 480 บาท ซึ่งเป็นเงินมัดจำ อย่างไรก็ดี ในช่วงกิจกรรมพิเศษ เช่น คอนเสิร์ต เทศกาลดนตรี นิทรรศการ งานแฟร์ และการแสดงพิเศษอื่นๆ อัตราค่าบริการและ/หรือจำนวนเงินมัดจำอาจมีการปรับเปลี่ยน ทั้งนี้ รายละเอียดการปรับเปลี่ยนดังกล่าวจะแสดงและแจ้งให้ทราบอย่างชัดเจน ณ สถานีให้บริการในขณะทำการเช่า'>
+                    ค่าบริการชั่วโมงละ 20 บาท แต่ไม่เกิน 80 บาทต่อวัน <br/>
+                    เศษของชั่วโมงจะถูกคิดเป็นชั่วโมงเต็ม <br/>
+                    ถ้าเช่ามากกว่า 6 วัน ระบบจะถือว่า "ไม่คืน" <br/>
+                    และจะถูกคิดเงิน 280 บาท ซึ่งเป็นเงินมัดจำ
+                    <br/><br/>
+                    อย่างไรก็ดี ในช่วงกิจกรรมพิเศษ เช่น คอนเสิร์ต เทศกาลดนตรี <br/>
+                    นิทรรศการ งานแฟร์ และการแสดงพิเศษอื่นๆ อัตราค่าบริการและ/<br/>
+                    หรือจำนวนเงินมัดจำอาจมีการปรับเปลี่ยน ทั้งนี้ รายละเอียด<br/>
+                    การปรับเปลี่ยนดังกล่าวจะแสดงและแจ้งให้ทราบอย่างชัดเจน ณ สถานี<br/>
                     ให้บริการในขณะทำการเช่า
                 </p>
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <button class="faq-question">
-                <span data-th="ทำไมต้องมีเงินมัดจำ?" data-en="Why is a deposit required?">ทำไมต้องมีเงินมัดจำ?</span>
-                <span class="faq-icon">+</span>
-            </button>
-            <div class="faq-answer">
-                <p data-th="เป็นเงินค้ำประกันของพาวเวอร์แบงค์ กรณีไม่คืนหรือทำหาย ถ้าคืนภายใน 6 วัน เงินมัดจำจะไม่ถูกหักเต็มจำนวน และลูกค้าไม่จำเป็นต้องนำพาวเวอร์แบงค์มาคืน" data-en="It guarantees the power bank in case it isn't returned or is lost. If returned within 6 days, the deposit is not charged in full, and you're never obligated to return the unit.">
-                    เป็นเงินค้ำประกันของพาวเวอร์แบงค์ กรณีไม่คืนหรือทำหาย <br>
-                    ถ้าคืนภายใน 6 วัน เงินมัดจำจะไม่ถูกหักเต็มจำนวน <br>
+</div>
+</div>
+<div class="faq-item">
+<button class="faq-question ripple-target">
+<span data-en="Why is a deposit required?" data-th="ทำไมต้องมีเงินมัดจำ?">ทำไมต้องมีเงินมัดจำ?</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p data-en="It guarantees the power bank in case it isn't returned or is lost. If returned within 6 days, the deposit is not charged in full, and you're never obligated to return the unit." data-th="เป็นเงินค้ำประกันของพาวเวอร์แบงค์ กรณีไม่คืนหรือทำหาย ถ้าคืนภายใน 6 วัน เงินมัดจำจะไม่ถูกหักเต็มจำนวน และลูกค้าไม่จำเป็นต้องนำพาวเวอร์แบงค์มาคืน">
+                    เป็นเงินค้ำประกันของพาวเวอร์แบงค์ กรณีไม่คืนหรือทำหาย <br/>
+                    ถ้าคืนภายใน 6 วัน เงินมัดจำจะไม่ถูกหักเต็มจำนวน <br/>
                     และลูกค้าไม่จำเป็นต้องนำพาวเวอร์แบงค์มาคืน
                 </p>
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <button class="faq-question">
-                <span data-th="ถ้าจ่ายด้วยบัตร เงินมัดจำทำงานอย่างไร?" data-en="How does the deposit work when paying by card?">ถ้าจ่ายด้วยบัตร เงินมัดจำทำงานอย่างไร?</span>
-                <span class="faq-icon">+</span>
-            </button>
-            <div class="faq-answer">
-                <p data-th="เมื่อเริ่มเช่าด้วยบัตรเครดิต/เดบิต ระบบจะไม่หักหรือกันวงเงินมัดจำ หากไม่คืนพาวเวอร์แบงค์ภายใน 6 วัน จึงจะเรียกเก็บเงิน 480 บาท ผ่านบัตรที่ผูกไว้ย้อนหลัง" data-en="When you start a rental with a credit/debit card, no deposit is charged or held upfront. Only if the power bank isn't returned within 6 days will 480 THB be charged to your linked card.">
-                    เมื่อเริ่มเช่าด้วยบัตรเครดิต/เดบิต ระบบจะ<strong>ไม่หักหรือกันวงเงินมัดจำ</strong> <br>
-                    หากไม่คืนพาวเวอร์แบงค์ภายใน 6 วัน จึงจะเรียกเก็บเงิน 480 บาท <br>
+</div>
+</div>
+<div class="faq-item">
+<button class="faq-question ripple-target">
+<span data-en="How does the deposit work when paying by card?" data-th="ถ้าจ่ายด้วยบัตร เงินมัดจำทำงานอย่างไร?">ถ้าจ่ายด้วยบัตร เงินมัดจำทำงานอย่างไร?</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p data-en="When you start a rental with a credit/debit card, no deposit is charged or held upfront. Only if the power bank isn't returned within 6 days will 480 THB be charged to your linked card." data-th="เมื่อเริ่มเช่าด้วยบัตรเครดิต/เดบิต ระบบจะไม่หักหรือกันวงเงินมัดจำ หากไม่คืนพาวเวอร์แบงค์ภายใน 6 วัน จึงจะเรียกเก็บเงิน 480 บาท ผ่านบัตรที่ผูกไว้ย้อนหลัง">
+                    เมื่อเริ่มเช่าด้วยบัตรเครดิต/เดบิต ระบบจะ<strong>ไม่หักหรือกันวงเงินมัดจำ</strong> <br/>
+                    หากไม่คืนพาวเวอร์แบงค์ภายใน 6 วัน จึงจะเรียกเก็บเงิน 280 บาท <br/>
                     ผ่านบัตรที่ผูกไว้ย้อนหลัง
                 </p>
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <button class="faq-question">
-                <span data-th="มีสายชาร์จมากับพาวเวอร์แบงค์ไหม?" data-en="Does the power bank include charging cables?">มีสายชาร์จมากับพาวเวอร์แบงค์ไหม?</span>
-                <span class="faq-icon">+</span>
-            </button>
-            <div class="faq-answer">
-                <p data-th="มีสายชาร์จให้ในตัวพาวเวอร์แบงค์ เป็นสาย Micro USB, Lightning และ USB-C ชาร์จได้ทีละ 1 อุปกรณ์เท่านั้น" data-en="Yes — built-in Micro USB, Lightning and USB-C cables. Only one device can be charged at a time.">
-                    มีสายชาร์จให้ในตัวพาวเวอร์แบงค์ เป็นสาย Micro USB, <br>
+</div>
+</div>
+<div class="faq-item">
+<button class="faq-question ripple-target">
+<span data-en="Does the power bank include charging cables?" data-th="มีสายชาร์จมากับพาวเวอร์แบงค์ไหม?">มีสายชาร์จมากับพาวเวอร์แบงค์ไหม?</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p data-en="Yes — built-in Micro USB, Lightning and USB-C cables. Only one device can be charged at a time." data-th="มีสายชาร์จให้ในตัวพาวเวอร์แบงค์ เป็นสาย Micro USB, Lightning และ USB-C ชาร์จได้ทีละ 1 อุปกรณ์เท่านั้น">
+                    มีสายชาร์จให้ในตัวพาวเวอร์แบงค์ เป็นสาย Micro USB, <br/>
                     Lightning และ USB-C ชาร์จได้ทีละ 1 อุปกรณ์เท่านั้น
                 </p>
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <button class="faq-question">
-                <span data-th="ความจุแบตเตอรี่เท่าไร?" data-en="What's the battery capacity?">ความจุแบตเตอรี่เท่าไร?</span>
-                <span class="faq-icon">+</span>
-            </button>
-            <div class="faq-answer">
-                <p><span class="num">8,000</span> mAh <span data-th="หากใช้จนหมด สามารถชาร์จแบตเตอรี่เองได้" data-en="If it runs out, it can also be charged like a normal power bank.">หากใช้จนหมด สามารถชาร์จแบตเตอรี่เองได้</span></p>
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <button class="faq-question">
-                <span data-th="หากเช่าเกิน 1 วัน คิดค่าบริการอย่างไร?" data-en="How is the fee calculated for rentals over 1 day?">หากเช่าเกิน 1 วัน คิดค่าบริการอย่างไร?</span>
-                <span class="faq-icon">+</span>
-            </button>
-            <div class="faq-answer">
-                <p data-th="หากเช่าเกิน 1 วัน ค่าบริการถัดไปจะคิดเป็นรายวัน วันละ 80 บาท เช่าได้สูงสุด 6 วัน หากเกิน 6 วัน เงินมัดจำจะถูกหักเป็นจำนวนเงิน 480 บาท" data-en="After the first day, the fee is charged daily at 80 THB per day, up to a maximum of 6 days. Beyond 6 days, the 480 THB deposit will be charged.">
-                    หากเช่าเกิน 1 วัน ค่าบริการถัดไปจะคิดเป็นรายวัน วันละ 80 บาท <br>
-                    เช่าได้สูงสุด 6 วัน หากเกิน 6 วัน เงินมัดจำจะถูกหักเป็นจำนวนเงิน <br>
-                    480 บาท
+</div>
+</div>
+<div class="faq-item">
+<button class="faq-question ripple-target">
+<span data-en="What's the battery capacity?" data-th="ความจุแบตเตอรี่เท่าไร?">ความจุแบตเตอรี่เท่าไร?</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p><span class="num">8,000</span> mAh <span data-en="If it runs out, it can also be charged like a normal power bank." data-th="หากใช้จนหมด สามารถชาร์จแบตเตอรี่เองได้">หากใช้จนหมด สามารถชาร์จแบตเตอรี่เองได้</span></p>
+</div>
+</div>
+<div class="faq-item">
+<button class="faq-question ripple-target">
+<span data-en="How is the fee calculated for rentals over 1 day?" data-th="หากเช่าเกิน 1 วัน คิดค่าบริการอย่างไร?">หากเช่าเกิน 1 วัน คิดค่าบริการอย่างไร?</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p data-en="After the first day, the fee is charged daily at 80 THB per day, up to a maximum of 6 days. Beyond 6 days, the 480 THB deposit will be charged." data-th="หากเช่าเกิน 1 วัน ค่าบริการถัดไปจะคิดเป็นรายวัน วันละ 80 บาท เช่าได้สูงสุด 6 วัน หากเกิน 6 วัน เงินมัดจำจะถูกหักเป็นจำนวนเงิน 480 บาท">
+                    หากเช่าเกิน 1 วัน ค่าบริการถัดไปจะคิดเป็นรายวัน วันละ 80 บาท <br/>
+                    เช่าได้สูงสุด 6 วัน หากเกิน 6 วัน เงินมัดจำจะถูกหักเป็นจำนวนเงิน <br/>
+                    280 บาท
                 </p>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- =======================
+</div>
+</div>
+</section>
+<!-- =======================
             CONTACT
     ======================= -->
-
-    <section class="contact" id="contact">
-
-        <h2 data-th="ติดต่อเรา" data-en="Contact Us">ติดต่อเรา</h2>
-
-        <p class="contact-subtitle"></p>
-
-        <div class="contact-grid">
-
-            <div class="contact-item contact-item--line">
-                <h3>LINE Official</h3>
-                <div class="line-block">
-                    <img class="line-qr" src="image/line-qr.png" alt="QR Code เพิ่มเพื่อน LINE 24CHARGE">
-                    <div class="line-info">
-                        <p class="line-id">@24charge</p>
-                        <a href="https://app.24charge.com/" target="_blank" rel="noopener" class="line-btn" data-th="เพิ่มเพื่อนทาง LINE" data-en="Add friend on LINE">
+<section class="contact" id="contact">
+<h2 data-en="Contact Us" data-th="ติดต่อเรา">ติดต่อเรา</h2>
+<p class="contact-subtitle"></p>
+<div class="contact-grid">
+<div class="contact-item contact-item--line reveal interactive-card">
+<h3>LINE Official</h3>
+<div class="line-block">
+<img alt="QR Code เพิ่มเพื่อน LINE 24CHARGE" class="line-qr" src="image/QRLine.jpg"/>
+<div class="line-info">
+<p class="line-id">@24charge</p>
+<a class="line-btn ripple-target" data-en="Add friend on LINE" data-th="เพิ่มเพื่อนทาง LINE" href="https://app.24charge.com/" rel="noopener" target="_blank">
                             เพิ่มเพื่อนทาง LINE
                         </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="contact-item">
-                <h3 data-th="อีเมล" data-en="Email">Email</h3>
-                <p>MKT.com</p>
-                <p class="contact-note" data-th="(สนใจติดตั้งตู้ กรุณาติดต่ออีเมลนี้)" data-en="(For station installation inquiries, please contact this email)">(สนใจติดตั้งตู้ กรุณาติดต่ออีเมลนี้)</p>
-            </div>
-
-            <div class="contact-item">
-                <h3 data-th="ที่อยู่" data-en="Address">ที่อยู่</h3>
-                <p data-th="บริษัท ทเวนตี้โฟร์ ชาร์จ จำกัด<br>เลขที่ 284 อาคาร A4 ชั้น 2<br>ซอยศูนย์วิจัย 4 แขวงบางกะปิ<br>เขตห้วยขวาง กรุงเทพมหานคร<br>10310" data-en="24 Charge Company Limited<br>284 Building A4, 2nd Floor<br>Soi Soonvijai 4, Bang Kapi<br>Huai Khwang, Bangkok<br>10310" data-html="true">
-                    บริษัท ทเวนตี้โฟร์ ชาร์จ จำกัด<br>
-                    เลขที่ 284 อาคาร A4 ชั้น 2<br>
-                    ซอยศูนย์วิจัย 4 แขวงบางกะปิ<br>
-                    เขตห้วยขวาง กรุงเทพมหานคร <br>
+</div>
+</div>
+</div>
+<div class="contact-item reveal interactive-card">
+<h3 data-en="Email" data-th="อีเมล">Email</h3>
+<p>MKT.com</p>
+<p class="contact-note" data-en="(For station installation inquiries, please contact this email)" data-th="(สนใจติดตั้งตู้ กรุณาติดต่ออีเมลนี้)">(สนใจติดตั้งตู้ กรุณาติดต่ออีเมลนี้)</p>
+</div>
+<div class="contact-item reveal interactive-card">
+<h3 data-en="Address" data-th="ที่อยู่">ที่อยู่</h3>
+<p data-en="24 Charge Company Limited&lt;br&gt;284 Building A4, 2nd Floor&lt;br&gt;Soi Soonvijai 4, Bang Kapi&lt;br&gt;Huai Khwang, Bangkok&lt;br&gt;10310" data-html="true" data-th="บริษัท ทเวนตี้โฟร์ ชาร์จ จำกัด&lt;br&gt;เลขที่ 284 อาคาร A4 ชั้น 2&lt;br&gt;ซอยศูนย์วิจัย 4 แขวงบางกะปิ&lt;br&gt;เขตห้วยขวาง กรุงเทพมหานคร&lt;br&gt;10310">
+                    บริษัท ทเวนตี้โฟร์ ชาร์จ จำกัด<br/>
+                    เลขที่ 284 อาคาร A4 ชั้น 2<br/>
+                    ซอยศูนย์วิจัย 4 แขวงบางกะปิ<br/>
+                    เขตห้วยขวาง กรุงเทพมหานคร <br/>
                     10310
                 </p>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- =======================
+</div>
+</div>
+</section>
+<!-- =======================
             FOOTER
     ======================= -->
-
-    <footer>
-
-        <img src="image/logo.png" alt="24CHARGE Logo">
-
-        <p data-th="บริการตู้เช่าพาวเวอร์แบงค์ 24 ชั่วโมง" data-en="24-hour power bank rental service">บริการตู้เช่าพาวเวอร์แบงค์ 24 ชั่วโมง</p>
-
-        <div class="footer-menu">
-            <a href="#hero" data-th="หน้าแรก" data-en="Home">หน้าแรก</a>
-            <a href="#service" data-th="บริการ" data-en="Service">บริการ</a>
-            <a href="#pricing" data-th="อัตราค่าเช่า" data-en="Pricing">อัตราค่าเช่า</a>
-            <a href="#partners" data-th="Our Partners" data-en="Our Partners">Our Partners</a>
-            <a href="#contact" data-th="ติดต่อ" data-en="Contact">ติดต่อ</a>
-        </div>
-
-        <div class="social">
-            <a href="#">Website</a>
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-            <a href="#">TikTok</a>
-            <a href="https://app.24charge.com/" target="_blank" rel="noopener">LINE</a>
-        </div>
-
-        <hr>
-
-        <p>© 2026 24CHARGE. All Rights Reserved.</p>
-
-    </footer>
-
-    <script src="script.js"></script>
-
+<footer>
+<img alt="24CHARGE Logo" src="image/logo.png"/>
+<p data-en="24-hour power bank rental service" data-th="บริการตู้เช่าพาวเวอร์แบงค์ 24 ชั่วโมง">บริการตู้เช่าพาวเวอร์แบงค์ 24 ชั่วโมง</p>
+<div class="footer-menu">
+<a data-en="Home" data-th="หน้าแรก" href="#hero">หน้าแรก</a>
+<a data-en="Service" data-th="บริการ" href="#service">บริการ</a>
+<a data-en="Pricing" data-th="อัตราค่าเช่า" href="#pricing">อัตราค่าเช่า</a>
+<a data-en="Our Partners" data-th="Our Partners" href="#partners">Our Partners</a>
+<a data-en="Contact" data-th="ติดต่อ" href="#contact">ติดต่อ</a>
+<a data-en="Report an issue" data-open-issue="" data-th="แจ้งปัญหา" href="#report-issue">แจ้งปัญหา</a></div>
+<div class="social">
+<a href="#">Website</a>
+<a href="#">Facebook</a>
+<a href="#">Instagram</a>
+<a href="#">TikTok</a>
+<a href="https://app.24charge.com/" rel="noopener" target="_blank">LINE</a>
+</div>
+<hr/>
+<p>© 2026 24CHARGE. All Rights Reserved.</p>
+</footer>
+<script src="script.js"></script>
+<button aria-controls="issue-panel" aria-expanded="false" class="issue-fab ripple-target" id="issue-fab" type="button">
+<span aria-hidden="true" class="issue-fab-icon">
+<svg fill="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 18.5 4 21v-4.8A7.5 7.5 0 0 1 3 12.5C3 8.36 7.03 5 12 5s9 3.36 9 7.5S16.97 20 12 20c-1.84 0-3.55-.46-5-1.5Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path>
+<path d="M9 12h.01M12 12h.01M15 12h.01" stroke="currentColor" stroke-linecap="round" stroke-width="2.4"></path>
+</svg>
+</span>
+<span class="issue-fab-copy">
+<strong data-en="Report issue" data-th="แจ้งปัญหา">แจ้งปัญหา</strong>
+<small data-en="We can help" data-th="เราช่วยคุณได้">เราช่วยคุณได้</small>
+</span>
+<span aria-hidden="true" class="issue-fab-pulse"></span>
+</button>
+<div class="issue-backdrop" data-close-issue="" hidden=""></div>
+<aside aria-hidden="true" aria-labelledby="issue-title" class="issue-panel" id="issue-panel">
+<div class="issue-panel-head">
+<div>
+<span aria-hidden="true" class="issue-status-dot"></span>
+<p class="issue-eyebrow" data-en="24CHARGE support" data-th="ทีม 24CHARGE พร้อมช่วย">ทีม 24CHARGE พร้อมช่วย</p>
+<h2 data-en="Report an issue" data-th="แจ้งปัญหาการใช้งาน" id="issue-title">แจ้งปัญหาการใช้งาน</h2>
+</div>
+<button aria-label="ปิดแบบฟอร์ม" class="issue-close ripple-target" data-close-issue="" type="button">×</button>
+</div>
+<p class="issue-intro" data-en="Share a few details. Our team will receive them by email and get back to you soon." data-th="กรอกรายละเอียดสั้น ๆ ทีมงานจะได้รับข้อมูลทางอีเมลและติดต่อกลับโดยเร็ว">กรอกรายละเอียดสั้น ๆ ทีมงานจะได้รับข้อมูลทางอีเมลและติดต่อกลับโดยเร็ว</p>
+<!-- เปลี่ยน YOUR_EMAIL@example.com เป็นอีเมลจริงของคุณเพียงจุดเดียว -->
+<form action="https://formsubmit.co/ajax/YOUR_EMAIL@example.com" class="issue-form" enctype="multipart/form-data" id="issue-form" method="POST" novalidate="">
+<input name="_subject" type="hidden" value="24CHARGE: มีผู้แจ้งปัญหาจากเว็บไซต์"/>
+<input name="_template" type="hidden" value="table"/>
+<input name="_captcha" type="hidden" value="false"/>
+<div class="form-grid">
+<label class="form-field">
+<span data-en="Your name" data-th="ชื่อผู้แจ้ง">ชื่อผู้แจ้ง</span>
+<input autocomplete="name" data-placeholder-en="Your name" data-placeholder-th="ชื่อของคุณ" name="name" placeholder="ชื่อของคุณ" required="" type="text"/>
+</label>
+<label class="form-field">
+<span data-en="Email or phone" data-th="อีเมลหรือเบอร์โทร">อีเมลหรือเบอร์โทร</span>
+<input data-placeholder-en="Email or phone" data-placeholder-th="example@email.com / 08x-xxx-xxxx" name="contact" placeholder="example@email.com / 08x-xxx-xxxx" required="" type="text"/>
+</label>
+</div>
+<label class="form-field">
+<span data-en="Issue type" data-th="ประเภทปัญหา">ประเภทปัญหา</span>
+<select name="issue_type" required="">
+<option data-en="Choose an issue" data-th="เลือกประเภทปัญหา" value="">เลือกประเภทปัญหา</option>
+<option data-en="Unable to rent" data-th="เช่าไม่ได้" value="เช่าไม่ได้">เช่าไม่ได้</option>
+<option data-en="Unable to return" data-th="คืนพาวเวอร์แบงค์ไม่ได้" value="คืนไม่ได้">คืนพาวเวอร์แบงค์ไม่ได้</option>
+<option data-en="Payment / Direct Debit" data-th="การชำระเงิน / Direct Debit" value="การชำระเงิน">การชำระเงิน / Direct Debit</option>
+<option data-en="Station or device issue" data-th="ตู้หรืออุปกรณ์มีปัญหา" value="ตู้หรืออุปกรณ์">ตู้หรืออุปกรณ์มีปัญหา</option>
+<option data-en="Other" data-th="อื่น ๆ" value="อื่น ๆ">อื่น ๆ</option>
+</select>
+</label>
+<label class="form-field">
+<span data-en="Location / station ID (optional)" data-th="สถานที่ / รหัสตู้ (ถ้ามี)">สถานที่ / รหัสตู้ (ถ้ามี)</span>
+<input data-placeholder-en="e.g. CentralWorld, 4th floor" data-placeholder-th="เช่น CentralWorld ชั้น 4" name="station" placeholder="เช่น CentralWorld ชั้น 4" type="text"/>
+</label>
+<label class="form-field">
+<span data-en="Details" data-th="รายละเอียด">รายละเอียด</span>
+<textarea data-placeholder-en="Tell us what happened and how we can help" data-placeholder-th="เกิดอะไรขึ้น และต้องการให้ทีมงานช่วยอย่างไร" name="message" placeholder="เกิดอะไรขึ้น และต้องการให้ทีมงานช่วยอย่างไร" required="" rows="4"></textarea>
+</label>
+<label class="form-field form-field--file">
+<span data-en="Attach a photo (optional)" data-th="แนบรูป (ไม่บังคับ)">แนบรูป (ไม่บังคับ)</span>
+<input accept="image/*" name="attachment" type="file"/>
+<small data-en="A photo of the station, screen, or payment helps us investigate faster." data-th="รูปหน้าตู้ หน้าจอ หรือรายการชำระเงินช่วยให้ตรวจสอบเร็วขึ้น">รูปหน้าตู้ หน้าจอ หรือรายการชำระเงินช่วยให้ตรวจสอบเร็วขึ้น</small>
+</label>
+<label class="form-consent">
+<input name="consent" required="" type="checkbox" value="ยินยอม"/>
+<span data-en="I agree to be contacted about this issue." data-th="ยินยอมให้ทีมงานติดต่อกลับเกี่ยวกับปัญหานี้">ยินยอมให้ทีมงานติดต่อกลับเกี่ยวกับปัญหานี้</span>
+</label>
+<button class="issue-submit ripple-target" type="submit">
+<span data-en="Send report" data-th="ส่งแจ้งปัญหา">ส่งแจ้งปัญหา</span>
+<span aria-hidden="true" class="submit-arrow">→</span>
+</button>
+<p aria-live="polite" class="issue-form-status" id="issue-form-status" role="status"></p>
+</form>
+<div class="issue-quick-links">
+<a data-close-issue="" data-en="View FAQ" data-th="ดูคำถามที่พบบ่อย" href="#faq">ดูคำถามที่พบบ่อย</a>
+<a data-close-issue="" data-en="Other contact options" data-th="ช่องทางติดต่ออื่น" href="#contact">ช่องทางติดต่ออื่น</a>
+</div>
+</aside>
+<div aria-live="polite" class="site-toast" id="site-toast" role="status"></div>
 </body>
 </html>
